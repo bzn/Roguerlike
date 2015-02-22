@@ -22,8 +22,8 @@ public class BoardManager : MonoBehaviour
 	}
 	
 	
-	private int columns = 6; 										//Number of columns in our game board.
-	private int rows = 6;											//Number of rows in our game board.
+	public int columns = 6; 										//Number of columns in our game board.
+	public int rows = 6;											//Number of rows in our game board.
 	private Count wallCount = new Count (5, 9);						//Lower and upper limit for our random number of walls per level.
 	private Count foodCount = new Count (1, 5);						//Lower and upper limit for our random number of food items per level.
 	public GameObject exit;											//Prefab to spawn for exit.
@@ -40,6 +40,25 @@ public class BoardManager : MonoBehaviour
 	private List <Vector3> gridPositions = new List<Vector3>();	//A list of possible locations to place tiles.		
 	private List<GameObject> wallList = new List<GameObject>();
 	//private List<GameObject> enemyList = new List<GameObject>();
+	public static BoardManager instance = null;
+
+	void Awake()
+	{
+		//Check if instance already exists
+		if (instance == null)
+			
+			//if not, set instance to this
+			instance = this;
+		
+		//If instance already exists and it's not this:
+		else if (instance != this)
+			
+			//Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
+			Destroy(gameObject);	
+		
+		//Sets this to not be destroyed when reloading scene
+		DontDestroyOnLoad(gameObject);
+	}
 
 	//Clears our list gridPositions and prepares it to generate a new board.
 	void InitialiseList ()
@@ -167,6 +186,7 @@ public class BoardManager : MonoBehaviour
 			if(tileChoice.name == "Enemy1" || tileChoice.name == "Enemy2")
 			{
 				GameManager.instance.enemyList.Add(item);
+				item.GetComponent<Enemy>().pos = pos;
 			}
 			else if(tileChoice.name == "ItemCoin" || tileChoice.name == "ItemGold")
 			{

@@ -13,20 +13,39 @@ public class Enemy : MovingObject
 	private Transform target;							//Transform to attempt to move toward each turn.
 	private bool skipMove;								//Boolean to determine whether or not enemy should skip a turn or move this turn.
 	
-	private int nowHP = 3;
+	public int nowHP = 3;
+	public int coolDownDefault = 5;
+	public int coolDown = 5;
+	public int attackPower = 1;
 
 	public GameObject nextItem;
-	public int attackCoolDown = 5;
+	public int pos;
+
+	void OnEnable()
+	{
+		AllTileInfo.instance.SetEnable(pos, true);
+		AllTileInfo.instance.allTiles[pos].GetComponent<TileInfo>().UpdateInfo(nowHP, attackPower, coolDown);
+	}
+
+	void OnDisable()
+	{
+		AllTileInfo.instance.SetEnable(pos, false);
+	}
 
 	public void EnemysTurn()
 	{
-		attackCoolDown--;
-		if(attackCoolDown == 0)
+		coolDown--;
+		if(coolDown == 0)
 		{
+			coolDown = coolDownDefault;
 			// attack
-			// ....
+			animator.SetTrigger ("enemyAttack");
+			SoundManager.instance.RandomizeSfx (attackSound1, attackSound2);
+			GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().AddHP(-attackPower);
 		}
-		Debug.Log("CD="+attackCoolDown.ToString());
+		Debug.Log("CD="+coolDown.ToString());
+
+		AllTileInfo.instance.allTiles[pos].GetComponent<TileInfo>().UpdateInfo(nowHP, attackPower, coolDown);
 	}
 
 	void OnMouseDown()
@@ -47,6 +66,8 @@ public class Enemy : MovingObject
 
 				// enemy dead
 				// ....
+				AllTileInfo.instance.SetEnable(pos, false);
+
 				this.GetComponentInParent<SpriteRenderer>().enabled = false;
 				GetComponentInParent<BoxCollider2D>().enabled = false;
 				//enabled = false;
