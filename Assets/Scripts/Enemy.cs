@@ -16,7 +16,8 @@ public class Enemy : MovingObject
 	public int nowHP = 3;
 	public int coolDownDefault = 5;
 	public int coolDown = 5;
-	public int attackPower = 1;
+	public int basicAtk = 1;
+	public int exp = 1;
 
 	public GameObject nextItem;
 	public int pos;
@@ -24,7 +25,7 @@ public class Enemy : MovingObject
 	void OnEnable()
 	{
 		AllTileInfo.instance.SetEnable(pos, true);
-		AllTileInfo.instance.allTiles[pos].GetComponent<TileInfo>().UpdateInfo(nowHP, attackPower, coolDown);
+		AllTileInfo.instance.allTiles[pos].GetComponent<TileInfo>().UpdateInfo(nowHP, basicAtk, coolDown);
 	}
 
 	void OnDisable()
@@ -34,6 +35,9 @@ public class Enemy : MovingObject
 
 	public void EnemysTurn()
 	{
+		if(!GetComponentInParent<SpriteRenderer>().enabled)
+			return;
+
 		coolDown--;
 		if(coolDown == 0)
 		{
@@ -41,41 +45,46 @@ public class Enemy : MovingObject
 			// attack
 			animator.SetTrigger ("enemyAttack");
 			SoundManager.instance.RandomizeSfx (attackSound1, attackSound2);
-			GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().AddHP(-attackPower);
+			GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().AddHP(-basicAtk);
 		}
 		Debug.Log("CD="+coolDown.ToString());
 
-		AllTileInfo.instance.allTiles[pos].GetComponent<TileInfo>().UpdateInfo(nowHP, attackPower, coolDown);
+		AllTileInfo.instance.allTiles[pos].GetComponent<TileInfo>().UpdateInfo(nowHP, basicAtk, coolDown);
 	}
 
 	void OnMouseDown()
 	{
 		if(GameManager.instance.gameState == GameManager.GameState.PlayersTurn)
 		{
-			GameManager.instance.PlayerTurnEnd();
 			if(nowHP <= 0)
 			{
 				return;
 			}
 
 			Debug.Log("Attack Enemy");
+			Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+			player.animator.SetTrigger("playerChop");
+
 			nowHP -= 1;
 			if(nowHP <= 0)
 			{
 				nowHP = 0;
 
 				// enemy dead
-				// ....
 				AllTileInfo.instance.SetEnable(pos, false);
 
-				this.GetComponentInParent<SpriteRenderer>().enabled = false;
+				GetComponentInParent<SpriteRenderer>().enabled = false;
 				GetComponentInParent<BoxCollider2D>().enabled = false;
-				//enabled = false;
+
 				if(nextItem)
 				{
 					nextItem.SetActive(true);
 				}
+
+				player.AddExp(exp);
 			}
+
+			GameManager.instance.PlayerTurnEnd();
 		}
 	}
 

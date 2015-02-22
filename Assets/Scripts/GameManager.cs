@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 	private Text levelText;									//Text to display current level number.
 	private GameObject levelImage;							//Image to block out level as levels are being set up, background for levelText.
 	private BoardManager boardScript;						//Store a reference to our BoardManager which will set up the level.
-	private int level = 1;									//Current level number, expressed in game as "Day 1".
+	private int stageLevel = 1;									//Current level number, expressed in game as "Day 1".
 	private List<Enemy> enemies;							//List of all Enemy units, used to issue them move commands.
 	private bool enemiesMoving;								//Boolean to check if enemies are moving.
 	private bool doingSetup = true;							//Boolean to check if we're setting up board, prevent Player from moving during setup.
@@ -28,6 +28,18 @@ public class GameManager : MonoBehaviour
 
 	public enum GameState {PlayersTurn, Collect, EnemysTurn, Shop, LevelUp, GameOver};
 	public GameState gameState = GameState.PlayersTurn;
+
+	public int nowHP = 10;
+	public int maxHP = 10;
+	public int nowCoins = 0;
+	public int maxCoins = 100;
+	public int nowExp = 0;
+	public int maxExp = 100;
+	public int basicAtk = 1;
+	public int weaponAtk = 0;
+	public int dex = 1;
+	public int luck = 1;
+	public int level = 1;
 
 	//Awake is always called before any Start functions
 	void Awake()
@@ -66,7 +78,7 @@ public class GameManager : MonoBehaviour
 	void OnLevelWasLoaded(int index)
 	{
 		//Add one to our level number.
-		level++;
+		stageLevel++;
 		//Call InitGame to initialize our level.
 		InitGame();
 	}
@@ -84,7 +96,7 @@ public class GameManager : MonoBehaviour
 		levelText = GameObject.Find("LevelText").GetComponent<Text>();
 		
 		//Set the text of levelText to the string "Day" and append the current level number.
-		levelText.text = "Day " + level;
+		levelText.text = "Stage " + stageLevel;
 		
 		//Set levelImage to active blocking player's view of the game board during setup.
 		levelImage.SetActive(true);
@@ -102,7 +114,7 @@ public class GameManager : MonoBehaviour
 		isGotKey = false;
 
 		//Call the SetupScene function of the BoardManager script, pass it current level number.
-		boardScript.SetupScene(level);
+		boardScript.SetupScene(stageLevel);
 	}
 	
 	
@@ -140,14 +152,16 @@ public class GameManager : MonoBehaviour
 	//GameOver is called when the player reaches 0 food points
 	public void GameOver()
 	{
+		gameState = GameState.GameOver;
+
 		//Set levelText to display number of levels passed and game over message
-		levelText.text = "After " + level + " days, you starved.";
+		levelText.text = "GameOver";
 		
 		//Enable black background image gameObject.
 		levelImage.SetActive(true);
 		
 		//Disable this GameManager.
-		enabled = false;
+		//enabled = false;
 	}
 	
 	//Coroutine to move enemies in sequence.
@@ -194,17 +208,25 @@ public class GameManager : MonoBehaviour
 				attackCount++;
 			}
 		}
+		/*
 		if(attackCount>0)
 		{
+			gameState = GameState.EnemysTurn;
 			StartCoroutine(EnemiesAttack());
 		}
+		*/
 	}
-
+	/*
 	IEnumerator EnemiesAttack()
 	{
 		yield return new WaitForSeconds(2);
-		gameState = GameState.PlayersTurn;
+
+		if(gameState != GameState.GameOver)
+		{
+			gameState = GameState.PlayersTurn;
+		}
 	}
+	*/
 }
 
 

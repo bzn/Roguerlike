@@ -17,19 +17,9 @@ public class Player : MovingObject
 	public AudioClip drinkSound2;				//2 of 2 Audio clips to play when player collects a soda object.
 	public AudioClip gameOverSound;				//Audio clip to play when player dies.
 	
-	private Animator animator;					//Used to store a reference to the Player's animator component.
+	public Animator animator;					//Used to store a reference to the Player's animator component.
 	private int food;							//Used to store player food points total during level.
 	private Vector2 touchOrigin = -Vector2.one;	//Used to store location of screen touch origin for mobile controls.
-
-	private int nowHP = 30;
-	private int maxHP = 30;
-	private int nowCoins = 0;
-	private int maxCoins = 100;
-	private int nowExp = 0;
-	private int maxExp = 100;
-	private int atk = 1;
-	private int dex = 1;
-	private int level = 1;
 	
 	//Start overrides the Start function of MovingObject
 	protected override void Start ()
@@ -48,14 +38,14 @@ public class Player : MovingObject
 
 	private void UpdatePlayerInfo()
 	{
-		// ....
+		PlayerInfo.instance.UpdateInfo();
 	}
 
 	//This function is called when the behaviour becomes disabled or inactive.
 	private void OnDisable ()
 	{
 		//When Player object is disabled, store the current local food total in the GameManager so it can be re-loaded in next level.
-		GameManager.instance.playerFoodPoints = food;
+		//GameManager.instance.playerFoodPoints = food;
 	}
 
 	private void Update ()
@@ -133,39 +123,45 @@ public class Player : MovingObject
 
 	public void AddCoins(int val)
 	{
-		nowCoins += val;
-		while(nowCoins >= maxCoins)
+		GameManager.instance.nowCoins += val;
+		while(GameManager.instance.nowCoins >= GameManager.instance.maxCoins)
 		{
-			nowCoins -= maxCoins;
+			GameManager.instance.nowCoins -= GameManager.instance.maxCoins;
 			// buy weapon
 			// ....
 		}
+
+		UpdatePlayerInfo();
 	}
 
 	public void AddHP(int val)
 	{
-		nowHP += val;
-		if(nowHP > maxHP)
+		GameManager.instance.nowHP += val;
+		if(GameManager.instance.nowHP > GameManager.instance.maxHP)
 		{
-			nowHP = maxHP;
+			GameManager.instance.nowHP = GameManager.instance.maxHP;
 		}
-		if(nowHP <= 0)
+		if(GameManager.instance.nowHP <= 0)
 		{
-			nowHP = 0;
+			GameManager.instance.nowHP = 0;
 			// gameover
-			// ....
+			GameOver();
 		}
+
+		UpdatePlayerInfo();
 	}
 
 	public void AddExp(int val)
 	{
-		nowExp += val;
-		while(nowExp >= maxExp)
+		GameManager.instance.nowExp += val;
+		while(GameManager.instance.nowExp >= GameManager.instance.maxExp)
 		{
-			nowExp -= maxExp;
+			GameManager.instance.nowExp -= GameManager.instance.maxExp;
 			// level up
-			// ....
+			GameManager.instance.level++;
 		}
+
+		UpdatePlayerInfo();
 	}
 
 	//AttemptMove overrides the AttemptMove function in the base class MovingObject
@@ -302,6 +298,13 @@ public class Player : MovingObject
 			//Call the GameOver function of GameManager.
 			GameManager.instance.GameOver ();
 		}
+	}
+
+	private void GameOver()
+	{
+		SoundManager.instance.PlaySingle(gameOverSound);
+		SoundManager.instance.musicSource.Stop();
+		GameManager.instance.GameOver();
 	}
 }
 
