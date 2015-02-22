@@ -1,0 +1,983 @@
+fileFormatVersion: 2
+guid: a73dc3a6495ae4145abeda6144f9ce06
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Scavengers_SpriteSheet 1_0
+    21300002: Scavengers_SpriteSheet 1_1
+    21300004: Scavengers_SpriteSheet 1_2
+    21300006: Scavengers_SpriteSheet 1_3
+    21300008: Scavengers_SpriteSheet 1_4
+    21300010: Scavengers_SpriteSheet 1_5
+    21300012: Scavengers_SpriteSheet 1_6
+    21300014: Scavengers_SpriteSheet 1_7
+    21300016: Scavengers_SpriteSheet 1_8
+    21300018: Scavengers_SpriteSheet 1_9
+    21300020: Scavengers_SpriteSheet 1_10
+    21300022: Scavengers_SpriteSheet 1_11
+    21300024: Scavengers_SpriteSheet 1_12
+    21300026: Scavengers_SpriteSheet 1_13
+    21300028: Scavengers_SpriteSheet 1_14
+    21300030: Scavengers_SpriteSheet 1_15
+    21300032: Scavengers_SpriteSheet 1_16
+    21300034: Scavengers_SpriteSheet 1_17
+    21300036: Scavengers_SpriteSheet 1_18
+    21300038: Scavengers_SpriteSheet 1_19
+    21300040: Scavengers_SpriteSheet 1_20
+    21300042: Scavengers_SpriteSheet 1_21
+    21300044: Scavengers_SpriteSheet 1_22
+    21300046: Scavengers_SpriteSheet 1_23
+    21300048: Scavengers_SpriteSheet 1_24
+    21300050: Scavengers_SpriteSheet 1_25
+    21300052: Scavengers_SpriteSheet 1_26
+    21300054: Scavengers_SpriteSheet 1_27
+    21300056: Scavengers_SpriteSheet 1_28
+    21300058: Scavengers_SpriteSheet 1_29
+    21300060: Scavengers_SpriteSheet 1_30
+    21300062: Scavengers_SpriteSheet 1_31
+    21300064: Scavengers_SpriteSheet 1_32
+    21300066: Scavengers_SpriteSheet 1_33
+    21300068: Scavengers_SpriteSheet 1_34
+    21300070: Scavengers_SpriteSheet 1_35
+    21300072: Scavengers_SpriteSheet 1_36
+    21300074: Scavengers_SpriteSheet 1_37
+    21300076: Scavengers_SpriteSheet 1_38
+    21300078: Scavengers_SpriteSheet 1_39
+    21300080: Scavengers_SpriteSheet 1_40
+    21300082: Scavengers_SpriteSheet 1_41
+    21300084: Scavengers_SpriteSheet 1_42
+    21300086: Scavengers_SpriteSheet 1_43
+    21300088: Scavengers_SpriteSheet 1_44
+    21300090: Scavengers_SpriteSheet 1_45
+    21300092: Scavengers_SpriteSheet 1_46
+    21300094: Scavengers_SpriteSheet 1_47
+    21300096: Scavengers_SpriteSheet 1_48
+    21300098: Scavengers_SpriteSheet 1_49
+    21300100: Scavengers_SpriteSheet 1_50
+    21300102: Scavengers_SpriteSheet 1_51
+    21300104: Scavengers_SpriteSheet 1_52
+    21300106: Scavengers_SpriteSheet 1_53
+    21300108: Scavengers_SpriteSheet 1_54
+    21300110: Scavengers_SpriteSheet 1_55
+    21300112: Scavengers_SpriteSheet 1_56
+    21300114: Scavengers_SpriteSheet 1_57
+    21300116: Scavengers_SpriteSheet 1_58
+    21300118: Scavengers_SpriteSheet 1_59
+    21300120: Scavengers_SpriteSheet 1_60
+    21300122: Scavengers_SpriteSheet 1_61
+    21300124: Scavengers_SpriteSheet 1_62
+    21300126: Scavengers_SpriteSheet 1_63
+    21300128: Scavengers_SpriteSheet 1_64
+    21300130: Scavengers_SpriteSheet 1_65
+    21300132: Scavengers_SpriteSheet 1_66
+    21300134: Scavengers_SpriteSheet 1_67
+    21300136: Scavengers_SpriteSheet 1_68
+    21300138: Scavengers_SpriteSheet 1_69
+    21300140: Scavengers_SpriteSheet 1_70
+    21300142: Scavengers_SpriteSheet 1_71
+    21300144: Scavengers_SpriteSheet 1_72
+    21300146: Scavengers_SpriteSheet 1_73
+    21300148: Scavengers_SpriteSheet 1_74
+    21300150: Scavengers_SpriteSheet 1_75
+    21300152: Scavengers_SpriteSheet 1_76
+    21300154: Scavengers_SpriteSheet 1_77
+    21300156: AllSpriteSheet_0
+    21300158: AllSpriteSheet_1
+    21300160: AllSpriteSheet_2
+    21300162: AllSpriteSheet_3
+    21300164: AllSpriteSheet_4
+    21300166: AllSpriteSheet_5
+    21300168: AllSpriteSheet_6
+    21300170: AllSpriteSheet_7
+    21300172: AllSpriteSheet_8
+    21300174: AllSpriteSheet_9
+    21300176: AllSpriteSheet_10
+    21300178: AllSpriteSheet_11
+    21300180: AllSpriteSheet_12
+    21300182: AllSpriteSheet_13
+    21300184: AllSpriteSheet_14
+    21300186: AllSpriteSheet_15
+    21300188: AllSpriteSheet_16
+    21300190: AllSpriteSheet_17
+    21300192: AllSpriteSheet_18
+    21300194: AllSpriteSheet_19
+    21300196: AllSpriteSheet_20
+    21300198: AllSpriteSheet_21
+    21300200: AllSpriteSheet_22
+    21300202: AllSpriteSheet_23
+    21300204: AllSpriteSheet_24
+    21300206: AllSpriteSheet_25
+    21300208: AllSpriteSheet_26
+    21300210: AllSpriteSheet_27
+    21300212: AllSpriteSheet_28
+    21300214: AllSpriteSheet_29
+    21300216: AllSpriteSheet_30
+    21300218: AllSpriteSheet_31
+    21300220: AllSpriteSheet_32
+    21300222: AllSpriteSheet_33
+    21300224: AllSpriteSheet_34
+    21300226: AllSpriteSheet_35
+    21300228: AllSpriteSheet_36
+    21300230: AllSpriteSheet_37
+    21300232: AllSpriteSheet_38
+    21300234: AllSpriteSheet_39
+    21300236: AllSpriteSheet_40
+    21300238: AllSpriteSheet_41
+    21300240: AllSpriteSheet_42
+    21300242: AllSpriteSheet_43
+    21300244: AllSpriteSheet_44
+    21300246: AllSpriteSheet_45
+    21300248: AllSpriteSheet_46
+    21300250: AllSpriteSheet_47
+    21300252: AllSpriteSheet_48
+    21300254: AllSpriteSheet_49
+    21300256: AllSpriteSheet_50
+    21300258: AllSpriteSheet_51
+    21300260: AllSpriteSheet_52
+    21300262: AllSpriteSheet_53
+    21300264: AllSpriteSheet_54
+    21300266: AllSpriteSheet_55
+    21300268: AllSpriteSheet_56
+    21300270: AllSpriteSheet_57
+    21300272: AllSpriteSheet_58
+    21300274: AllSpriteSheet_59
+    21300276: AllSpriteSheet_60
+    21300278: AllSpriteSheet_61
+    21300280: AllSpriteSheet_62
+    21300282: AllSpriteSheet_63
+    21300284: AllSpriteSheet_64
+    21300286: AllSpriteSheet_65
+    21300288: AllSpriteSheet_66
+    21300290: AllSpriteSheet_67
+    21300292: AllSpriteSheet_68
+    21300294: AllSpriteSheet_69
+    21300296: AllSpriteSheet_70
+    21300298: AllSpriteSheet_71
+    21300300: AllSpriteSheet_72
+    21300302: AllSpriteSheet_73
+    21300304: AllSpriteSheet_74
+    21300306: AllSpriteSheet_75
+    21300308: AllSpriteSheet_76
+    21300310: AllSpriteSheet_77
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: AllSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllSpriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
